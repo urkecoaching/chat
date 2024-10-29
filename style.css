@@ -1,0 +1,118 @@
+body {
+    background-color: #121212; /* Tamna pozadina */
+    color: #ffffff; /* Svetla boja teksta */
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Tamniji kontejner */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+#chatBox {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #2a2a2a; /* Tamna pozadina za chat box */
+    border-radius: 8px;
+}
+
+.user-message {
+    text-align: right;
+    margin: 10px 0;
+    color: #4caf50; /* Svetlija boja za korisničke poruke */
+}
+
+.other-message {
+    text-align: left;
+    margin: 10px 0;
+    color: #ffffff; /* Svetla boja za poruke drugih korisnika */
+}
+
+button {
+    margin-left: 5px;
+}
+
+button.btn-warning {
+    background-color: #ff9800; /* Narandžasta boja za edit dugme */
+    border: none;
+}
+
+button.btn-danger {
+    background-color: #f44336; /* Crvena boja za delete dugme */
+    border: none;
+}
+
+/* Input polja */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+#chatInput {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #3a3a3a; /* Tamna pozadina za input polja */
+    color: #ffffff; /* Svetla boja teksta */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+#chatInput {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #3a3a3a; /* Tamna pozadina za input polja */
+    color: #ffffff; /* Svetla boja teksta */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+#chatInput:focus {
+    outline: none;
+    background-color: #4a4a4a; /* Svetlija tamna boja na fokus */
+}
+
+/* Dark mode input polja */
+.dark-mode input[type="text"],
+.dark-mode input[type="password"],
+.dark-mode input[type="email"],
+.dark-mode #chatInput {
+    background-color: #3a3a3a; /* Tamna pozadina za input polja */
+    color: #ffffff; /* Svetla boja teksta */
+}
+.boldT{
+    color: #fff;
+}
+.btn{
+    align-items: center;
+    color: #121212;
+    background-color: #fff;
+    border: 0.1px solid #1e1e1e;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+}
+.btn:hover{
+    background-color: #121212;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.log-or-register-here{
+    margin-top: 20px;
+}
+.text-info{
+    color: #fff;
+}

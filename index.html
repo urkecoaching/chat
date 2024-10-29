@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="auth-container" id="registerContainer"  align="center">
+            <h2 class="text-primary" align="center"><b class="boldT">Register</b></h2>
+            <input type="text" class="form-control mb-2" id="registerUsername" placeholder="Username">
+            <input type="password" class="form-control mb-2" id="registerPassword" placeholder="Password"><br>
+            <button class="btn btn-success" onclick="registerUser()" align="center"><b align="center">Register</b></button><br>
+            <p>Already have an account? <span onclick="toggleAuth('login')" style="cursor:pointer; margin-top: 10px;" class="log-or-register-here">Log in here</span></p>
+        </div>
+
+        <div class="auth-container" id="loginContainer" style="display: none;"  align="center">
+            <h2 class="text-success" ><b class="boldT">Log In</b></h2>
+            <input type="text" class="form-control mb-2" id="loginUsername" placeholder="Username">
+            <input type="password" class="form-control mb-2" id="loginPassword" placeholder="Password"><br>
+            <button class="btn btn-primary" onclick="loginUser()"  align="center"><b>Login</b></button><br>
+            <p>Don't have an account? <span onclick="toggleAuth('register')" style="cursor:pointer; margin-top: 10px;" class="log-or-register-here">Register here</span></p>
+        </div>
+
+        <div class="chat-container" id="chatContainer" style="display: none;">
+            <h2 class="text-info" align="center" style="color: #fff;"><b>Welcome to the Chat</b></h2>
+            <div id="chatBox" class="border rounded p-2 mb-3" style="height: 300px; overflow-y: scroll;"></div>
+            <form id="chatForm" onsubmit="sendMessage(event)">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="chatInput" placeholder="Send a message" required>
+                    <div class="input-group-append">
+                        <button class="btn-info" type="submit">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
